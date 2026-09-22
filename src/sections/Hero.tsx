@@ -51,17 +51,20 @@ export const Hero: React.FC<HeroProps> = ({ onExploreWork, onConnect }) => {
         >
           {/* Left Column */}
           <div>
-            <h1
-              style={{
-                fontSize: 'clamp(2.5rem, 5vw, 4rem)',
-                fontWeight: 750,
-                lineHeight: 1.08,
-                letterSpacing: '-0.035em',
-                color: 'var(--text-primary)',
-                marginBottom: '24px'
-              }}
-            >
-              {PERSONAL_INFO.tagline}
+            <h1 className="hero-headline">
+              <span className="hero-intro-badge">
+                <span className="badge-dot" />
+                DEVELOPER PORTFOLIO
+              </span>
+              <span className="hero-name-container">
+                <span className="hero-name">
+                  Arun kumar M
+                  <span className="hero-name-dot">.</span>
+                </span>
+              </span>
+              <span className="hero-tagline-text">
+                {PERSONAL_INFO.tagline}
+              </span>
             </h1>
 
             <p

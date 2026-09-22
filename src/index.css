@@ -280,6 +280,98 @@ button {
   to { opacity: 1; }
 }
 
+/* ===================================================================
+   HERO HEADLINE & NAME TYPOGRAPHY DESIGN
+   =================================================================== */
+.hero-headline {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 26px;
+}
+
+.hero-intro-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: clamp(0.75rem, 1.2vw, 0.875rem);
+  color: var(--accent-primary);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.hero-intro-badge .badge-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--accent-primary);
+  box-shadow: 0 0 10px var(--accent-primary);
+  display: inline-block;
+  animation: pulseGlow 2s infinite ease-in-out;
+}
+
+.hero-intro-badge::after {
+  content: '';
+  display: inline-block;
+  width: 36px;
+  height: 1px;
+  background: linear-gradient(90deg, var(--accent-primary), transparent);
+}
+
+.hero-name-container {
+  display: block;
+  line-height: 1.05;
+}
+
+.hero-name {
+  font-size: clamp(2.75rem, 6.2vw, 4.75rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  background: linear-gradient(135deg, #ffffff 15%, #00e599 65%, #38bdf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  filter: drop-shadow(0 0 28px rgba(0, 229, 153, 0.22));
+  position: relative;
+  transition: filter var(--transition-normal);
+}
+
+.hero-name:hover {
+  filter: drop-shadow(0 0 36px rgba(0, 229, 153, 0.38));
+}
+
+.hero-name-dot {
+  -webkit-text-fill-color: var(--accent-primary);
+  color: var(--accent-primary);
+}
+
+.hero-tagline-text {
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  font-weight: 500;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  letter-spacing: -0.015em;
+  border-left: 2px solid var(--accent-primary);
+  padding-left: 14px;
+  margin-top: 4px;
+  max-width: 580px;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.85);
+  }
+}
+
 /* Reduced motion considerations */
 @media (prefers-reduced-motion: reduce) {
   html {

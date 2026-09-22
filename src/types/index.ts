@@ -61,6 +61,7 @@ export interface EducationInfo {
   tag: string;
   degree: string;
   college: string;
+  batch?: string;
   expectedGraduation: string;
   coursework: string[];
 }

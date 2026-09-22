@@ -9,7 +9,7 @@ import {
 } from '../types';
 
 export const PERSONAL_INFO = {
-  name: 'Arun Kumar M.',
+  name: 'Arun Kumar M',
   brand: 'AKM',
   role: 'Aspiring Data Scientist & Software Engineer',
   tagline: 'I build with code, data, and curiosity.',
@@ -366,9 +366,10 @@ export const LEARNING_JOURNEY: TimelineItem[] = [
 
 export const EDUCATION_DATA: EducationInfo = {
   tag: 'ENGINEERING',
-  degree: '[Degree / Branch]',
-  college: '[College Name]',
-  expectedGraduation: '[Expected Graduation]',
+  degree: 'B.Tech in Computer Science and Engineering',
+  college: 'REVA University',
+  batch: '2025 – 2029',
+  expectedGraduation: '2029',
   coursework: [
     'Data Structures & Algorithms',
     'Database Management Systems',
